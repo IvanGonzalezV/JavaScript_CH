@@ -1,43 +1,30 @@
 console.log("Curso de JS")
 
-// Clasificador de Dias Laborales
+// PROYECTO: 1 - Clasificacion de Persona de acuerdo a la edad
 
-let diaSemana = prompt("Ingrese un día de la semana:");
+let continuar = true;
 
-if (diaSemana === "lunes" || diaSemana === "martes" || diaSemana === "miércoles" || diaSemana === "jueves" || diaSemana === "viernes") {
-  console.log("Día laboral");
-} else if (diaSemana === "sábado" || diaSemana === "domingo") {
-  console.log("Fin de semana");
-} else {
-  console.log("Día no válido");
+while (continuar) {
+  let edad = parseInt(prompt("Ingrese su edad:"));
+
+  if (edad < 18) {
+    alert("Eres un niño o un adolescente.");
+  } else if (edad >= 18 && edad < 65) {
+    alert("Eres un adulto.");
+  } else {
+    alert("Eres una persona mayor.");
+  }
+
+  const respuesta = prompt("Desea continuar? Ingrese 'esc' para salir, o cualquier otra tecla para continuar.");
+
+  if (respuesta !== null && respuesta.toLowerCase() === 'esc') {
+    continuar = false; 
+  }
 }
 
 
-// Clasificacion de Persona de acuerdo a la edad
 
-// let continuar = true;
-
-// while (continuar) {
-//   let edad = parseInt(prompt("Ingrese su edad:"));
-
-//   if (edad < 18) {
-//     alert("Eres un niño o un adolescente.");
-//   } else if (edad >= 18 && edad < 65) {
-//     alert("Eres un adulto.");
-//   } else {
-//     alert("Eres una persona mayor.");
-//   }
-
-//   const respuesta = prompt("Desea continuar? Ingrese 'esc' para salir, o cualquier otra tecla para continuar.");
-
-//   if (respuesta !== null && respuesta.toLowerCase() === 'esc') {
-//     continuar = false; 
-//   }
-// }
-
-
-
-// Tabla de Multiplicar opciones de rango y tabla
+// PROYECTO: 2 - Tabla de Multiplicar opciones de rango y tabla
 
 // let numero = parseInt(prompt("Ingrese un número para ver su tabla de multiplicar:"));
 // let limiteSuperior = parseInt(prompt("Ingrese el limite superior del rango:"));
@@ -49,7 +36,9 @@ if (diaSemana === "lunes" || diaSemana === "martes" || diaSemana === "miércoles
 // }
 
 
-// Aplicacion de IVA
+
+
+// PROYECTO: 3 - Aplicacion de IVA
 
 /* const iva = 1.16
 let monto1 = parseInt(prompt("Ingrese el primer monto"))
