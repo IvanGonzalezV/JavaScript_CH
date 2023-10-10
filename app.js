@@ -12,7 +12,7 @@ function calcularAnioNacimiento(edad) {
 while (continuar) {
   let edad = parseInt(prompt("Ingrese su edad:"));
 
-  if (isNaN(edad)) {        // esta parte calculara lo que no es numero 🤬
+  if (isNaN(edad)) {        // esta parte calculara lo que no es numero 🤬😡
     alert("Por Favor, Ingrese una Edad Valida.");
     continue;
   }
