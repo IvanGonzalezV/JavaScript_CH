@@ -12,7 +12,7 @@ function calcularAnioNacimiento(edad) {
 while (continuar) {
   let edad = parseInt(prompt("Ingrese su edad:"));
 
-  if (isNaN(edad)) {
+  if (isNaN(edad)) {        // esta parte calculara lo que no es numero 🤬
     alert("Por Favor, Ingrese una Edad Valida.");
     continue;
   }
@@ -20,9 +20,9 @@ while (continuar) {
   if (edad < 18) {
     alert("Eres un niño o un adolescente.");
   } else if (edad >= 18 && edad < 65) {
-    alert("Eres un adulto.");
+    alert("Eres un adulto joven.");
   } else {
-    alert("Eres una persona mayor.");
+    alert("Eres un adulto mayor.");
   }
 
   const anioNacimiento = calcularAnioNacimiento(edad);
@@ -34,7 +34,6 @@ while (continuar) {
     continuar = false; 
   }
 }
-
 
 
 // PROYECTO: 2 - Tabla de Multiplicar opciones de rango y tabla
