@@ -12,7 +12,7 @@ function calcularAnioNacimiento(edad) {
 while (continuar) {
   let edad = parseInt(prompt("Ingrese su edad:"));
 
-  if (isNaN(edad)) {
+  if (isNaN(edad)) {        // esta parte calculara lo que no es numero 🤬
     alert("Por Favor, Ingrese una Edad Valida.");
     continue;
   }
@@ -20,9 +20,9 @@ while (continuar) {
   if (edad < 18) {
     alert("Eres un niño o un adolescente.");
   } else if (edad >= 18 && edad < 65) {
-    alert("Eres un adulto.");
+    alert("Eres un adulto joven.");
   } else {
-    alert("Eres una persona mayor.");
+    alert("Eres un adulto mayor.");
   }
 
   const anioNacimiento = calcularAnioNacimiento(edad);
@@ -49,7 +49,25 @@ for (let i = 1; i <= limiteSuperior; i++) {
 }
 
 
+<<<<<<< HEAD
 // Aplicacion de IVA
+=======
+// PROYECTO: 2 - Tabla de Multiplicar opciones de rango y tabla
+
+// let numero = parseInt(prompt("Ingrese un número para ver su tabla de multiplicar:"));
+// let limiteSuperior = parseInt(prompt("Ingrese el limite superior del rango:"));
+
+// for (let i = 1; i <= limiteSuperior; i++) {
+//   let resultado = numero * i;
+//   console.log(`${numero} x ${i} = ${resultado}`);
+//   /* alert(`${numero} x ${i} = ${resultado}`); */
+// }
+
+
+
+
+// PROYECTO: 3 - Aplicacion de IVA
+>>>>>>> js_rama
 
 /* const iva = 1.16
 let monto1 = parseInt(prompt("Ingrese el primer monto"))
