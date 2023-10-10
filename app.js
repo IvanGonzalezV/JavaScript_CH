@@ -4,8 +4,18 @@ console.log("Curso de JS")
 
 /* let continuar = true;
 
+function calcularAnioNacimiento(edad) {
+    const anioActual = new Date().getFullYear();
+    return anioActual - edad;
+}
+
 while (continuar) {
   let edad = parseInt(prompt("Ingrese su edad:"));
+
+  if (isNaN(edad)) {
+    alert("Por Favor, Ingrese una Edad Valida.");
+    continue;
+  }
 
   if (edad < 18) {
     alert("Eres un niño o un adolescente.");
@@ -14,6 +24,9 @@ while (continuar) {
   } else {
     alert("Eres una persona mayor.");
   }
+
+  const anioNacimiento = calcularAnioNacimiento(edad);
+  alert("Año de Nacimiento Aproximado: " + anioNacimiento);
 
   const respuesta = prompt("Desea continuar? Ingrese 'esc' para salir, o cualquier otra tecla para continuar.");
 
